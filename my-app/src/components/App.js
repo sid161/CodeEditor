@@ -1,9 +1,23 @@
 import React from 'react'
+import Editor from './Editor'
 
 function App() {
   return (
     <>
-    <h1>Hello World</h1>
+  <div className = "pane top-pan">
+    <Editor/>
+    <Editor/>
+    <Editor/>
+  </div>
+  <div className = "pane">
+  <iframe
+  title = "output"
+  sandbox = "allow-scripts"
+  frameBorder= "0"
+  width = "100%"
+  height = "100%"
+  />
+  </div>
     </>
   )
 }
